@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Trader",
+  "version": "0.1.0",
+  "description": "在 Twitter 上自动识别 Solana 合约地址并弹出DEX平台跳转悬浮窗,方便快速交易。",
+  "permissions": ["scripting", "tabs", "storage"],
+  "host_permissions": [
+    "https://twitter.com/*",
+    "https://x.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "assets/*" ],
+      "matches": [ "https://twitter.com/*", "https://x.com/*" ]
+    }
+  ]
+} 

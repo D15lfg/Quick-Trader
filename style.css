@@ -1,0 +1,226 @@
+/* --- ULTIMATE DEBUGGING CSS --- */
+/* This file contains ONLY the grid layout skeleton. No decorative styles. */
+
+body {
+  margin: 0;
+  background: #181A1B;
+  font-family: 'ABeeZee', 'Days One', Arial, sans-serif;
+  color: #fff;
+}
+
+.popup-container {
+  width: 370px;
+  background: #181A1B;
+  border-radius: 22px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.32);
+  padding: 24px 24px 18px 24px;
+  box-sizing: border-box;
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.popup-header a {
+  margin-left: auto;
+}
+
+.popup-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.popup-title {
+  font-family: 'Days One', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.popup-twitter {
+  width: 16px;
+  height: 13px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.separator-top {
+  border: none;
+  height: 1px;
+  background: #2A2F39;
+  margin: 0 -24px 18px -24px;
+}
+
+.platforms-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: start;
+  height: auto;
+  background: linear-gradient(180deg, rgba(82,214,166,0.08) 0%, rgba(82,214,166,0.18) 100%);
+  border: 2px solid #52D6A6;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 18px;
+  margin-left: -2px;
+}
+
+.platform-row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.platform-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background: rgba(0,0,0,0.44);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-family: 'ABeeZee', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.platform-btn.selected {
+  box-shadow: 0 0 0 3px #52D6A6, 0 0 15px rgba(82,214,166,0.4);
+  background: linear-gradient(135deg, rgba(82,214,166,0.25), rgba(82,214,166,0.1));
+  color: #fff;
+  border: 1px solid rgba(82,214,166,0.5);
+}
+.platform-logo-wrapper {
+  width: 20px;
+  height: 20px;
+  background: #181A1B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
+.platform-logo {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+/* Remove all grid-area and other specific layout rules */
+#axiom-btn, #gmgn-btn, #ave-btn, #xxyy-btn {
+  /* No specific layout rules needed */
+}
+
+.tip-subtitle {
+  text-align: center;
+  color: #B2B2B2;
+  font-size: 15px;
+  margin-bottom: 18px;
+  margin-top: 8px;
+}
+.tips-section {
+  margin-top: 10px;
+}
+.tips-title {
+  font-family: 'Days One', sans-serif;
+  font-size: 16px;
+  color: #888888;
+  margin-bottom: 5px;
+}
+.separator-bottom {
+  border: none;
+  height: 1px;
+  background: #2A2F39;
+  margin: 0 0 8px 0;
+}
+.tips-desc {
+  color: #B2B2B2;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.popup-version {
+  text-align: center;
+  color: #888888;
+  font-size: 13px;
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+
+/* ========== Solana 合约地址浮动按钮样式 ========== */
+.solana-float-box {
+  position: absolute;
+  top: -36px;
+  left: 0;
+  z-index: 9999;
+  border-radius: 16px;
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  pointer-events: auto;
+  transition: opacity 0.2s;
+}
+.solana-btn {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(82,214,166,0.7), rgba(82,214,166,0.5));
+  color: #fff;
+  border: 1px solid #52D6A6;
+  border-radius: 999px;
+  padding: 2px 12px;
+  font-size: 14px;
+  font-family: 'ABeeZee', 'Days One', Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.18);
+  transition: box-shadow 0.2s, background 0.2s;
+  outline: none;
+  margin: 0 2px;
+  text-shadow: 0 0 1px #000, 0 1px 1px #000, 1px 0 1px #000, 0 -1px 1px #000, -1px 0 1px #000;
+}
+.solana-btn:hover {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.18);
+  background: linear-gradient(135deg, rgba(82,214,166,0.35), rgba(82,214,166,0.18));
+}
+.solana-platform-logo {
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+  border-radius: 50%;
+  background: #181A1B;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);
+}
+
+.solana-float-close {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 18px;
+  height: 18px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.85;
+  z-index: 10001;
+  transition: background 0.2s, opacity 0.2s;
+}
+.solana-float-close:hover {
+  background: #888;
+  opacity: 1;
+}
+
+.solana-float-box.light-bg .solana-btn { color: #222 !important; }
+.solana-float-box.dark-bg .solana-btn { color: #fff !important; }
