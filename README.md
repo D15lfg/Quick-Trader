@@ -2,6 +2,7 @@
 
 ## 简介
 Quick Trader 是一款用于 Twitter 网页的 Solana 合约地址识别与 DEX 快速跳转插件。它能自动识别推文中的 Solana 合约地址，并在地址旁弹出平台跳转悬浮窗，支持一键跳转主流 DEX 平台，方便用户快速交易。
+![1440](https://github.com/user-attachments/assets/686d7af5-b58b-4c4c-9d0e-e9a1704b0446)
 
 ## 主要功能
 - 自动识别 Twitter 页面上的 Solana 合约地址（32-44位Base58字符串）
